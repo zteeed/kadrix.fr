@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { getTranslations } from "@/i18n/request";
+import { buildLocaleUrl } from "@/data/routes";
 
 const linkedinUrls = [
   "https://www.linkedin.com/in/aymeric-du-reau/",
@@ -53,7 +54,7 @@ export default async function EquipePage({ params }: Props) {
         </div>
         <div className="mt-8 text-center">
           <Link
-            href={`/${locale}/contact`}
+            href={buildLocaleUrl(locale as "fr" | "en", "contact")}
             className="inline-flex items-center justify-center rounded-full bg-kadrix-primary px-6 py-3 text-sm font-medium text-white hover:bg-sky-600"
           >
             {t.common.cta}
@@ -80,7 +81,7 @@ export default async function EquipePage({ params }: Props) {
 
       <div className="mt-20 text-center">
         <Link
-          href={`/${locale}/contact`}
+          href={buildLocaleUrl(locale as "fr" | "en", "contact")}
           className="font-medium text-kadrix-primary hover:underline"
         >
           {t.equipe.projectCta}

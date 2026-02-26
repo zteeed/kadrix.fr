@@ -5,13 +5,14 @@ import { usePathname } from "next/navigation";
 import { useState, useRef, useEffect } from "react";
 import type { Locale } from "@/i18n/config";
 import type { Messages } from "@/i18n/request";
+import { getRoutePath, getPathForOtherLocale, normalizePathSegment, buildLocaleUrl } from "@/data/routes";
 
 const navKeys = [
-  { href: "", labelKey: "nav.home" },
-  { href: "expertises", labelKey: "nav.expertises" },
-  { href: "references", labelKey: "nav.references" },
-  { href: "equipe", labelKey: "nav.team" },
-  { href: "contact", labelKey: "nav.contact" },
+  { routeKey: "home", labelKey: "nav.home" },
+  { routeKey: "expertises", labelKey: "nav.expertises" },
+  { routeKey: "references", labelKey: "nav.references" },
+  { routeKey: "team", labelKey: "nav.team" },
+  { routeKey: "contact", labelKey: "nav.contact" },
 ] as const;
 
 export function Header({
@@ -23,16 +24,19 @@ export function Header({
 }) {
   const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
-  const base = `/${locale}`;
-  const navLinks = navKeys.map(({ href, labelKey }) => ({
-    href: href ? `${base}/${href}` : base,
-    label: t.common.nav[labelKey.split(".")[1] as keyof typeof t.common.nav],
-  }));
+  const localeTyped = locale === "en" ? "en" : "fr";
+  const navLinks = navKeys.map(({ routeKey, labelKey }) => {
+    const path = routeKey === "home" ? "" : getRoutePath(localeTyped, routeKey);
+    return {
+      href: buildLocaleUrl(localeTyped, path),
+      label: t.common.nav[labelKey.split(".")[1] as keyof typeof t.common.nav],
+    };
+  });
 
   return (
     <header className="sticky top-0 z-50 border-b border-slate-200/80 bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/80">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-        <Link href={base} className="text-xl font-bold tracking-tight text-kadrix-dark">
+        <Link href={buildLocaleUrl(localeTyped)} className="text-xl font-bold tracking-tight text-kadrix-dark">
           kadrix.
         </Link>
 
@@ -53,7 +57,7 @@ export function Header({
         <div className="hidden md:flex md:items-center md:gap-4">
           <LocaleSwitcher locale={locale} pathname={pathname} t={t} />
           <Link
-            href={`${base}/contact`}
+            href={buildLocaleUrl(localeTyped, "contact")}
             className="inline-flex items-center justify-center rounded-full bg-kadrix-primary px-5 py-2.5 text-sm font-medium text-white transition hover:bg-sky-600"
           >
             {t.common.cta}
@@ -91,7 +95,7 @@ export function Header({
             ))}
             <LocaleSwitcher locale={locale} pathname={pathname} t={t} className="mt-2" />
             <Link
-              href={`${base}/contact`}
+              href={buildLocaleUrl(localeTyped, "contact")}
               className="mt-2 rounded-full bg-kadrix-primary px-4 py-2.5 text-center text-sm font-medium text-white"
               onClick={() => setMenuOpen(false)}
             >
@@ -117,9 +121,13 @@ function LocaleSwitcher({
 }) {
   const [open, setOpen] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
-  const pathWithoutLocale = pathname.replace(/^\/[a-z]{2}(\/|$)/, "$1").replace(/^$/, "");
-  const frHref = `/fr${pathWithoutLocale ? `/${pathWithoutLocale}` : ""}`;
-  const enHref = `/en${pathWithoutLocale ? `/${pathWithoutLocale}` : ""}`;
+  // Strip locale and any number of slashes so /en////equipe => equipe
+  const rawPath = pathname.replace(/^\/[a-z]{2}\/*/, "") || "";
+  const pathWithoutLocale = normalizePathSegment(rawPath);
+  const frPathNorm = getPathForOtherLocale("en", pathWithoutLocale);
+  const enPathNorm = getPathForOtherLocale("fr", pathWithoutLocale);
+  const frHref = buildLocaleUrl("fr", frPathNorm);
+  const enHref = buildLocaleUrl("en", enPathNorm);
   const currentFlag = locale === "fr" ? "🇫🇷" : "🇺🇸";
 
   useEffect(() => {
@@ -133,12 +141,7 @@ function LocaleSwitcher({
   }, [open]);
 
   return (
-    <div
-      ref={ref}
-      className={`relative ${className}`}
-      onMouseEnter={() => setOpen(true)}
-      onMouseLeave={() => setOpen(false)}
-    >
+    <div ref={ref} className={`relative ${className}`}>
       <button
         type="button"
         onClick={() => setOpen((o) => !o)}

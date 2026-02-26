@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useState } from "react";
 import type { Messages } from "@/i18n/request";
 import type { Locale } from "@/i18n/config";
+import { buildLocaleUrl } from "@/data/routes";
 
 function FounderCard({
   founder,
@@ -84,7 +85,7 @@ export function Founders({ t, locale }: { t: Messages; locale: Locale }) {
         </div>
         <div className="mt-12 text-center">
           <Link
-            href={`/${locale}/contact`}
+            href={buildLocaleUrl(locale, "contact")}
             className="inline-flex items-center justify-center rounded-full bg-kadrix-primary px-6 py-3 text-sm font-medium text-white hover:bg-sky-600"
           >
             {t.common.cta}

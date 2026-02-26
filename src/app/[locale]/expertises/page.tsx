@@ -1,10 +1,13 @@
 import Link from "next/link";
 import { getTranslations } from "@/i18n/request";
+import { getExpertiseUrlSlug, type ExpertiseSlug } from "@/data/expertise-technologies";
+import { buildLocaleUrl } from "@/data/routes";
 
 type Props = { params: Promise<{ locale: string }> };
 
 export default async function ExpertisesPage({ params }: Props) {
   const { locale } = await params;
+  const localeTyped = locale === "en" ? "en" : "fr";
   const t = getTranslations(locale);
   const list = t.expertises.list as Array<{
     title: string;
@@ -26,7 +29,7 @@ export default async function ExpertisesPage({ params }: Props) {
         {list.map(({ title, slug, description }) => (
           <Link
             key={slug}
-            href={`/${locale}/expertises/${slug}`}
+            href={buildLocaleUrl(locale as "fr" | "en", `expertises/${getExpertiseUrlSlug(localeTyped, slug as ExpertiseSlug)}`)}
             className="group rounded-2xl border border-slate-200 bg-white p-8 shadow-sm transition hover:border-kadrix-primary/30 hover:shadow-md"
           >
             <h2 className="text-lg font-semibold text-kadrix-dark group-hover:text-kadrix-primary">

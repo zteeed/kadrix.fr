@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { Messages } from "@/i18n/request";
 import type { Locale } from "@/i18n/config";
+import { buildLocaleUrl } from "@/data/routes";
 
 export function About({ t, locale }: { t: Messages; locale: Locale }) {
   return (
@@ -14,7 +15,7 @@ export function About({ t, locale }: { t: Messages; locale: Locale }) {
           <p className="mt-6 text-lg text-kadrix-muted">{t.home.about.p1}</p>
           <p className="mt-4 text-lg text-kadrix-muted">{t.home.about.p2}</p>
           <Link
-            href={`/${locale}/contact`}
+            href={buildLocaleUrl(locale, "contact")}
             className="mt-10 inline-block text-kadrix-primary font-medium hover:underline"
           >
             {t.common.cta} →

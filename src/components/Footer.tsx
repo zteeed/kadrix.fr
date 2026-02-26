@@ -1,18 +1,22 @@
 import Link from "next/link";
 import type { Locale } from "@/i18n/config";
 import type { Messages } from "@/i18n/request";
+import { getRoutePath, buildLocaleUrl } from "@/data/routes";
 
 const footerLinkKeys = [
-  { href: "politique-de-confidentialite", labelKey: "privacy" },
-  { href: "mentions-legales", labelKey: "legal" },
+  { routeKey: "privacy" as const, labelKey: "privacy" },
+  { routeKey: "legal" as const, labelKey: "legal" },
 ] as const;
 
 export function Footer({ locale, t }: { locale: Locale; t: Messages }) {
-  const base = `/${locale}`;
-  const footerLinks = footerLinkKeys.map(({ href, labelKey }) => ({
-    href: `${base}/${href}`,
-    label: t.common.footer[labelKey as keyof typeof t.common.footer],
-  }));
+  const localeTyped = locale === "en" ? "en" : "fr";
+  const footerLinks = footerLinkKeys.map(({ routeKey, labelKey }) => {
+    const seg = getRoutePath(localeTyped, routeKey);
+    return {
+      href: buildLocaleUrl(localeTyped, seg),
+      label: t.common.footer[labelKey as keyof typeof t.common.footer],
+    };
+  });
 
   return (
     <footer className="border-t border-slate-200 bg-slate-50">

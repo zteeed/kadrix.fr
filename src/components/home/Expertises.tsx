@@ -1,10 +1,17 @@
 import Link from "next/link";
 import type { Messages } from "@/i18n/request";
 import type { Locale } from "@/i18n/config";
+import { getExpertiseUrlSlug } from "@/data/expertise-technologies";
+import type { ExpertiseSlug } from "@/data/expertise-technologies";
+import { buildLocaleUrl } from "@/data/routes";
 
 export function Expertises({ t, locale }: { t: Messages; locale: Locale }) {
+  const localeTyped = locale === "en" ? "en" : "fr";
   const expertises = (t.home.expertises.items as Array<{ title: string; href: string }>).map(
-    ({ title, href }) => ({ title, href: `/${locale}/expertises/${href}` })
+    ({ title, href }) => ({
+      title,
+      href: buildLocaleUrl(localeTyped, `expertises/${getExpertiseUrlSlug(localeTyped, href as ExpertiseSlug)}`),
+    })
   );
 
   return (

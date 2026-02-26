@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { defaultLocale } from "@/i18n/config";
 import { isValidLocale } from "@/i18n/config";
+import { buildLocaleUrl } from "@/data/routes";
 
 export default function RootRedirectPage() {
   const router = useRouter();
@@ -14,7 +15,7 @@ export default function RootRedirectPage() {
         ? navigator.language.toLowerCase().slice(0, 2)
         : "";
     const locale = isValidLocale(preferred) ? preferred : defaultLocale;
-    router.replace(`/${locale}`);
+    router.replace(buildLocaleUrl(locale as "fr" | "en"));
   }, [router]);
 
   return (

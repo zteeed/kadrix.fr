@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { getTranslations } from "@/i18n/request";
+import { buildLocaleUrl } from "@/data/routes";
 
 type Props = { params: Promise<{ locale: string }> };
 
@@ -14,7 +15,7 @@ export default async function ContactMerciPage({ params }: Props) {
       </h1>
       <p className="mt-4 text-lg text-kadrix-muted">{t.contactMerci.body}</p>
       <Link
-        href={`/${locale}`}
+        href={buildLocaleUrl(locale as "fr" | "en")}
         className="mt-8 inline-block rounded-full bg-kadrix-primary px-6 py-3 text-base font-medium text-white hover:bg-sky-600"
       >
         {t.common.backToHome}

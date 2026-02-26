@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useParams } from "next/navigation";
 import { getTranslations } from "@/i18n/request";
 import type { Locale } from "@/i18n/config";
+import { ROUTE_CONTACT_THANKYOU, buildLocaleUrl } from "@/data/routes";
 
 const FORMSPREE_ID = process.env.NEXT_PUBLIC_FORMSPREE_ID || "xzdayqkw";
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://www.kadrix.fr";
@@ -32,7 +33,7 @@ export default function ContactPage() {
         <input
           type="hidden"
           name="_next"
-          value={`${SITE_URL}/${locale}/contact/merci`}
+          value={`${SITE_URL}${buildLocaleUrl(locale as "fr" | "en", `contact/${ROUTE_CONTACT_THANKYOU[locale as "fr" | "en"]}`)}`}
         />
         <input
           type="hidden"

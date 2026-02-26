@@ -7,6 +7,7 @@ import { Partners } from "@/components/home/Partners";
 import { CtaSection } from "@/components/home/CtaSection";
 import { getTranslations } from "@/i18n/request";
 import type { Locale } from "@/i18n/config";
+import { getRoutePath, buildLocaleUrl } from "@/data/routes";
 
 type Props = { params: Promise<{ locale: string }> };
 
@@ -26,7 +27,7 @@ export default async function HomePage({ params }: Props) {
           <h2 className="text-lg font-semibold text-kadrix-muted">{t.home.teamSection.title}</h2>
           <p className="mt-2 text-sm text-kadrix-muted">{t.home.teamSection.body}</p>
           <Link
-            href={`/${locale}/equipe`}
+            href={buildLocaleUrl(locale as "fr" | "en", getRoutePath(locale as "fr" | "en", "team"))}
             className="mt-6 inline-block text-sm font-medium text-kadrix-primary hover:underline"
           >
             {t.home.teamSection.link}
