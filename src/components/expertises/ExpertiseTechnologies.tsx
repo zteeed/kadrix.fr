@@ -14,8 +14,11 @@ type Props = {
   techNames?: Record<string, string>;
 };
 
+const PNG_LOGO_IDS = new Set(["python", "vertex-ai", "gemini"]);
+
 function logoSrc(id: string) {
-  return `/technologies/${id}.svg`;
+  const ext = PNG_LOGO_IDS.has(id) ? "png" : "svg";
+  return `/technologies/${id}.${ext}`;
 }
 
 export function ExpertiseTechnologies({ slug, title, techNames }: Props) {
