@@ -1,17 +1,38 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getTranslations } from "@/i18n/request";
 import {
   getExpertiseSlugFromUrl,
+  getExpertiseUrlSlug,
   getExpertiseUrlSlugs,
   type ExpertiseSlug,
 } from "@/data/expertise-technologies";
 import { buildLocaleUrl } from "@/data/routes";
+import { buildPageMetadata } from "@/lib/seo";
 import { ExpertiseTechnologies } from "@/components/expertises/ExpertiseTechnologies";
 
 type Props = {
   params: Promise<{ locale: string; slug: string }>;
 };
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale, slug: urlSlug } = await params;
+  if (locale !== "fr" && locale !== "en") return {};
+  const localeTyped = locale as "fr" | "en";
+  const slug = getExpertiseSlugFromUrl(localeTyped, urlSlug);
+  if (!slug) return {};
+  const t = getTranslations(locale);
+  const slugData = (t.expertises.slug as Record<string, { title: string; subtitle: string; description: string }>)[slug];
+  if (!slugData) return {};
+  const pathSegment = `expertises/${getExpertiseUrlSlug(localeTyped, slug)}`;
+  return buildPageMetadata({
+    locale: localeTyped,
+    pathWithoutLocale: pathSegment,
+    title: `${slugData.title} - ${slugData.subtitle}`,
+    description: slugData.description,
+  });
+}
 
 export function generateStaticParams() {
   const locales = ["fr", "en"] as const;

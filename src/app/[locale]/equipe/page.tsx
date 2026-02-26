@@ -1,6 +1,8 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 import { getTranslations } from "@/i18n/request";
-import { buildLocaleUrl } from "@/data/routes";
+import { getRoutePath, buildLocaleUrl } from "@/data/routes";
+import { buildPageMetadata } from "@/lib/seo";
 
 const linkedinUrls = [
   "https://www.linkedin.com/in/aymeric-du-reau/",
@@ -9,6 +11,19 @@ const linkedinUrls = [
 ];
 
 type Props = { params: Promise<{ locale: string }> };
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
+  if (locale !== "fr" && locale !== "en") return {};
+  const t = getTranslations(locale);
+  const pathSegment = getRoutePath(locale as "fr" | "en", "team");
+  return buildPageMetadata({
+    locale: locale as "fr" | "en",
+    pathWithoutLocale: pathSegment,
+    title: t.equipe.title,
+    description: t.equipe.intro,
+  });
+}
 
 export default async function EquipePage({ params }: Props) {
   const { locale } = await params;

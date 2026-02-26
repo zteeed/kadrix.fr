@@ -1,9 +1,23 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 import { getTranslations } from "@/i18n/request";
 import { getExpertiseUrlSlug, type ExpertiseSlug } from "@/data/expertise-technologies";
 import { buildLocaleUrl } from "@/data/routes";
+import { buildPageMetadata } from "@/lib/seo";
 
 type Props = { params: Promise<{ locale: string }> };
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
+  if (locale !== "fr" && locale !== "en") return {};
+  const t = getTranslations(locale);
+  return buildPageMetadata({
+    locale: locale as "fr" | "en",
+    pathWithoutLocale: "expertises",
+    title: t.expertises.pageTitle,
+    description: t.expertises.pageIntro,
+  });
+}
 
 export default async function ExpertisesPage({ params }: Props) {
   const { locale } = await params;

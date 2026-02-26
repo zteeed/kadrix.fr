@@ -1,8 +1,24 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 import { getTranslations } from "@/i18n/request";
-import { buildLocaleUrl } from "@/data/routes";
+import { getRoutePathSegment, buildLocaleUrl } from "@/data/routes";
+import { buildPageMetadata } from "@/lib/seo";
 
 type Props = { params: Promise<{ locale: string }> };
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
+  if (locale !== "fr" && locale !== "en") return {};
+  const t = getTranslations(locale);
+  const pathSegment = getRoutePathSegment(locale as "fr" | "en", "contactThankYou");
+  return buildPageMetadata({
+    locale: locale as "fr" | "en",
+    pathWithoutLocale: pathSegment,
+    title: t.contactMerci.title,
+    description: t.contactMerci.body,
+    noIndex: true,
+  });
+}
 
 export default async function ContactMerciPage({ params }: Props) {
   const { locale } = await params;

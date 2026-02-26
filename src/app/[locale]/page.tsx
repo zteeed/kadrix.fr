@@ -1,4 +1,5 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 import { Hero } from "@/components/home/Hero";
 import { About } from "@/components/home/About";
 import { Founders } from "@/components/home/Founders";
@@ -8,8 +9,21 @@ import { CtaSection } from "@/components/home/CtaSection";
 import { getTranslations } from "@/i18n/request";
 import type { Locale } from "@/i18n/config";
 import { getRoutePath, buildLocaleUrl } from "@/data/routes";
+import { buildPageMetadata } from "@/lib/seo";
 
 type Props = { params: Promise<{ locale: string }> };
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
+  if (locale !== "fr" && locale !== "en") return {};
+  const t = getTranslations(locale);
+  return buildPageMetadata({
+    locale: locale as Locale,
+    pathWithoutLocale: "",
+    title: t.metadata.title,
+    description: t.metadata.description,
+  });
+}
 
 export default async function HomePage({ params }: Props) {
   const { locale } = await params;

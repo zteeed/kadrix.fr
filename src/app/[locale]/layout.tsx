@@ -17,9 +17,20 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
   if (!isValidLocale(locale)) return {};
   const t = getTranslations(locale);
+  const desc = t.metadata.description;
   return {
     title: t.metadata.title,
-    description: t.metadata.description,
+    description: desc,
+    openGraph: {
+      locale: locale === "fr" ? "fr_FR" : "en_GB",
+      alternateLocale: locale === "fr" ? "en_GB" : "fr_FR",
+      title: t.metadata.title,
+      description: desc,
+    },
+    twitter: {
+      title: t.metadata.title,
+      description: desc,
+    },
   };
 }
 
