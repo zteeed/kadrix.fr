@@ -1,0 +1,32 @@
+# https://mise.jdx.dev/configuration.html
+# Run: mise install (install tools), mise run <task> or mise <task>
+
+[tools]
+node = "25"
+
+[tasks.install]
+description = "Install npm dependencies"
+run = "npm install"
+
+[tasks.serve]
+description = "Serve out/ and rebuild on file changes (serve:watch)"
+depends = ["install"]
+run = "npm run serve:watch"
+
+[tasks.lint]
+description = "Run ESLint (requires Node 20 via mise)"
+depends = ["install"]
+run = "npm run lint"
+
+[tasks."test:build"]
+description = "Verify production build succeeds"
+depends = ["install"]
+run = "npm run test:build"
+
+[tasks.start]
+description = "Start stack (build and run in background)"
+run = "docker compose up -d --build"
+
+[tasks.stop]
+description = "Stop and remove containers"
+run = "docker compose down"

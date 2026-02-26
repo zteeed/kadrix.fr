@@ -1,0 +1,291 @@
+{
+  "common": {
+    "cta": "Discutons de votre projet",
+    "nav": {
+      "home": "Accueil",
+      "expertises": "Expertises",
+      "references": "Références",
+      "team": "Équipe",
+      "contact": "Contact"
+    },
+    "footer": {
+      "tagline": "Agence d'intégration IA, infrastructures cloud et on-premise, développement web.",
+      "contact": "Contact",
+      "links": "Liens",
+      "privacy": "Politique de confidentialité",
+      "legal": "Mentions légales",
+      "copyright": "Tous droits réservés."
+    },
+    "menu": "Menu",
+    "switchToEnglish": "Passer en anglais",
+    "switchToFrench": "Changer en français",
+    "langFrench": "Français",
+    "langEnglish": "English",
+    "learnMore": "En savoir plus →",
+    "backToHome": "Retour à l'accueil",
+    "allExpertises": "← Toutes nos expertises",
+    "ourServices": "Nos services"
+  },
+  "home": {
+    "hero": {
+      "title": "Agence d'intégration IA, cloud & développement web",
+      "subtitle": "Votre équipe IA, cloud, web",
+      "body": "Notre équipe conçoit et fait évoluer vos applications à des coûts compétitifs, sans intermédiaire, pour accélérer votre activité."
+    },
+    "teamSection": {
+      "title": "L'équipe Kadrix",
+      "body": "Passionnés de challenges tech, nous visons l'excellence pour chacun de nos clients.",
+      "link": "Découvrir l'équipe →"
+    },
+    "about": {
+      "title": "Passionnés de challenges tech",
+      "p1": "Nous visons l'excellence pour l'ensemble de nos clients. Pour cela nous procédons de la manière la plus pragmatique possible en toute transparence avec vous et vos équipes pendant toute la durée des développements.",
+      "p2": "Nous avons l'habitude de travailler sur des projets avec des enjeux techniques et commerciaux importants. Que ce soit pour des start-ups ou des grands groupes, nous savons adapter nos méthodes et sommes prêts à relever tous les défis."
+    },
+    "founders": {
+      "title": "Les fondateurs",
+      "linkedin": "Profil LinkedIn de"
+    },
+    "foundersList": [
+      {
+        "name": "Aymeric du Réau",
+        "role": "CEO",
+        "description": "Aymeric pilote Kadrix après des années dans le conseil et la tech."
+      },
+      {
+        "name": "Jean-Christophe KOURAJIAN",
+        "role": "CPO",
+        "description": "Jean-Christophe anime la vision produit. Il a une solide expérience dans la tech et l'innovation."
+      },
+      {
+        "name": "Aurélien Duboc",
+        "role": "CTO",
+        "description": "Aurélien pilote la tech et les infrastructures."
+      }
+    ],
+    "expertises": {
+      "title": "Nos expertises",
+      "items": [
+        { "title": "Intelligence artificielle", "href": "intelligence-artificielle" },
+        { "title": "Infrastructure Cloud / On-Premise", "href": "infrastructure-cloud" },
+        { "title": "Disponibilité & monitoring (SLA)", "href": "disponibilite-monitoring" },
+        { "title": "Automatisation", "href": "automatisation" },
+        { "title": "Plateformes web", "href": "developpement-sur-mesure" },
+        { "title": "Cybersécurité", "href": "cybersecurite" }
+      ]
+    },
+    "ctaSection": {
+      "title": "Démarrer la discussion",
+      "body": "Échangeons sur vos enjeux : intégration IA, infrastructures cloud et développement."
+    }
+  },
+  "references": {
+    "title": "Nos références",
+    "intro": "Nous accompagnons des entreprises dans l'IA, l'infrastructure cloud et le développement web.",
+    "sectors": ["all", "industry", "services", "finance", "retail", "tech"],
+    "sectorLabels": {
+      "all": "Tous",
+      "industry": "Industrie",
+      "services": "Services",
+      "finance": "Finance",
+      "retail": "Retail",
+      "tech": "Tech"
+    },
+    "trust": "Ils nous font confiance",
+    "trustBody": "Grands groupes et PME dans l'industrie, la retail, la finance et la tech.",
+    "partnerDescriptions": {
+      "carrefour": "Intégration & développement",
+      "renault": "Infrastructure & plateformes",
+      "groupama": "Assurance & services",
+      "murex": "Infrastructure & DevOps",
+      "cleyrop": "Développement sur mesure",
+      "safran": "Infrastructure & industrie",
+      "thales": "Infrastructure & défense",
+      "ministere-armees": "Partenariat institutionnel",
+      "quicksign": "Plateforme & automatisation",
+      "fdj": "Infrastructure & gaming",
+      "decathlon": "Infrastructure & retail",
+      "nexity": "Services & immobilier",
+      "outscale": "Infrastructure cloud",
+      "ere-conseils": "Accompagnement & expertise"
+    }
+  },
+  "equipe": {
+    "title": "L'équipe Kadrix",
+    "intro": "Passionnés de challenges tech, nous visons l'excellence pour chacun de nos clients.",
+    "foundersTitle": "Les fondateurs",
+    "linkedin": "Profil LinkedIn de",
+    "teamTitle": "L'équipe",
+    "teamIntro": "Chaque membre de Kadrix a passé un processus de sélection rigoureux, qui valorise le potentiel technique, l'esprit d'équipe et le goût du service client.",
+    "teams": [
+      { "name": "Développement Full-Stack", "count": "30+", "description": "Développeurs full-stack passionnés par les technologies modernes." },
+      { "name": "Ingénierie IA", "count": "15+", "description": "Ingénieurs IA et data pour vos projets d'intelligence artificielle." },
+      { "name": "Produit & Design", "count": "20+", "description": "Product managers et designers UX/UI pour des produits centrés utilisateur." },
+      { "name": "Opérations & Ventes", "count": "10+", "description": "Accompagnement commercial et livraison de vos projets." }
+    ],
+    "projectCta": "Vous avez un projet ? Démarrer la discussion →"
+  },
+  "contact": {
+    "title": "Discutons de votre projet",
+    "intro": "Échangeons sur vos enjeux : intégration IA, infrastructures cloud et développement.",
+    "firstName": "Prénom",
+    "lastName": "Nom",
+    "email": "Email",
+    "phone": "Téléphone",
+    "company": "Société (ou nom du projet)",
+    "budget": "Budget",
+    "budgetPlaceholder": "Choisissez votre budget",
+    "budgetOptions": ["0€ - 10K€", "10K€ - 30K€", "30K€ - 60K€", "60K€ - 120K€", "120K€ - 300K€", "300K€+", "Je ne sais pas"],
+    "messageLabel": "Aimeriez-vous nous donner des informations supplémentaires concernant votre projet ? (facultatif)",
+    "submit": "Envoyer",
+    "subjectNewMessage": "Nouveau message depuis www.kadrix.fr"
+  },
+  "contactMerci": {
+    "title": "Message envoyé",
+    "body": "Merci pour votre message. Nous vous recontacterons rapidement."
+  },
+  "expertises": {
+    "pageTitle": "Nos expertises",
+    "pageIntro": "IA, infrastructure cloud, automatisation, web et cybersecurité. Nous accompagnons vos projets de A à Z.",
+    "technologiesTitle": "Technologies utilisées",
+    "techNames": {
+      "python": "Python",
+      "tensorflow": "TensorFlow",
+      "pytorch": "PyTorch",
+      "huggingface": "Hugging Face",
+      "openai": "OpenAI",
+      "langchain": "LangChain",
+      "pandas": "Pandas",
+      "aws": "AWS",
+      "gcp": "Google Cloud",
+      "azure": "Microsoft Azure",
+      "ovh": "OVH",
+      "scaleway": "Scaleway",
+      "outscale": "Outscale",
+      "fortinet": "Fortinet",
+      "cisco": "Cisco",
+      "proxmox": "Proxmox",
+      "prometheus": "Prometheus",
+      "grafana": "Grafana",
+      "datadog": "Datadog",
+      "elastic": "Elastic",
+      "pagerduty": "PagerDuty",
+      "kibana": "Kibana",
+      "terraform": "Terraform",
+      "ansible": "Ansible",
+      "gitlab": "GitLab",
+      "github": "GitHub",
+      "jenkins": "Jenkins",
+      "docker": "Docker",
+      "kubernetes": "Kubernetes",
+      "react": "React",
+      "nextjs": "Next.js",
+      "nodejs": "Node.js",
+      "typescript": "TypeScript",
+      "postgresql": "PostgreSQL",
+      "redis": "Redis",
+      "owasp": "OWASP",
+      "snyk": "Snyk",
+      "hashicorp-vault": "HashiCorp Vault",
+      "crowdstrike": "CrowdStrike"
+    },
+    "list": [
+      { "title": "Intelligence artificielle", "slug": "intelligence-artificielle", "description": "Solutions d'IA sur mesure, LLM, Computer Vision, systèmes prédictifs." },
+      { "title": "Infrastructure Cloud / On-Premise", "slug": "infrastructure-cloud", "description": "Conception, déploiement et exploitation d'infrastructures cloud ou on-premise." },
+      { "title": "Disponibilité & monitoring (SLA)", "slug": "disponibilite-monitoring", "description": "SLA 100 %, supervision, monitoring et haute disponibilité de vos systèmes." },
+      { "title": "Automatisation", "slug": "automatisation", "description": "Automatisation des déploiements, pipelines CI/CD et processus métier." },
+      { "title": "Plateformes web", "slug": "developpement-sur-mesure", "description": "Plateformes web et applications sur mesure adaptées à vos processus." },
+      { "title": "Cybersécurité", "slug": "cybersecurite", "description": "Audit, sécurisation et bonnes pratiques." }
+    ],
+    "slug": {
+      "intelligence-artificielle": {
+        "title": "Pôle Data & IA",
+        "subtitle": "Nous développons des solutions d'IA sur mesure en un temps record",
+        "description": "Nos ingénieurs IA vous accompagnent dans la conception, le développement et le déploiement de modèles et applications d'intelligence artificielle à fort impact.",
+        "services": [
+          { "title": "Audit Data & IA", "text": "Nous analysons vos processus et identifions des opportunités concrètes pour intégrer l'IA à vos métiers." },
+          { "title": "Applications IA", "text": "Conception et développement de solutions sur mesure qui s'intègrent à votre stack et répondent à vos objectifs." },
+          { "title": "Modèles d'IA", "text": "Développement de modèles sur mesure (ML, Deep Learning, finetuning) pour vos cas d'usage." }
+        ]
+      },
+      "infrastructure-cloud": {
+        "title": "Infrastructure Cloud / On-Premise",
+        "subtitle": "Conception, déploiement et exploitation de vos infrastructures",
+        "description": "Nous concevons et opérons des infrastructures cloud (AWS, GCP, Azure, OVH, Outscale…) ou on-premise, adaptées à vos contraintes de performance, coûts et conformité.",
+        "services": [
+          { "title": "Cloud public & hybride", "text": "Architecture, migration et exploitation d'infrastructures cloud ou hybrides." },
+          { "title": "On-Premise", "text": "Déploiement et exploitation de serveurs et environnements dans vos locaux ou datacenters." }
+        ]
+      },
+      "disponibilite-monitoring": {
+        "title": "Disponibilité & monitoring (SLA)",
+        "subtitle": "SLA 100 %, supervision et haute disponibilité",
+        "description": "Mise en place de dispositifs de monitoring, alerting et supervision pour garantir la disponibilité de vos systèmes et le respect de vos engagements SLA.",
+        "services": [
+          { "title": "Monitoring & supervision", "text": "Supervision 24/7, métriques, alerting et tableaux de bord pour piloter vos infrastructures et applications." },
+          { "title": "Haute disponibilité", "text": "Architectures résilientes et plans de reprise pour limiter les indisponibilités." }
+        ]
+      },
+      "automatisation": {
+        "title": "Automatisation",
+        "subtitle": "CI/CD, pipelines et automatisation des processus",
+        "description": "Nous mettons en place des pipelines de déploiement (CI/CD), de l'infrastructure as code et des automatisations pour accélérer et sécuriser vos livraisons.",
+        "services": [
+          { "title": "CI/CD", "text": "Pipelines de build, test et déploiement automatisés (GitLab CI, GitHub Actions, Jenkins, etc.)." },
+          { "title": "Infrastructure as Code", "text": "Terraform, Ansible et scripts pour provisionner et maintenir vos environnements de façon reproductible." }
+        ]
+      },
+      "developpement-sur-mesure": {
+        "title": "Plateformes web & développement sur mesure",
+        "subtitle": "Des applications web performantes et évolutives",
+        "description": "Nous concevons et développons des plateformes web sur mesure, des logiciels métier et des applications SaaS adaptés à vos processus et à votre croissance.",
+        "services": [
+          { "title": "Plateformes web", "text": "Sites vitrines, portails, dashboards et applications web modernes (React, Next.js, Node.js, etc.)." },
+          { "title": "Logiciels métier", "text": "Outils métier sur mesure pour automatiser et optimiser vos processus internes." },
+          { "title": "Applications SaaS", "text": "Solutions SaaS évolutives, multi-tenant et sécurisées." }
+        ]
+      },
+      "cybersecurite": {
+        "title": "Cybersécurité",
+        "subtitle": "Audit, sécurisation et bonnes pratiques",
+        "description": "Audits de sécurité, mise en place de bonnes pratiques (OWASP, RGPD) et accompagnement pour sécuriser vos applications et données.",
+        "services": [
+          { "title": "Audit & conformité", "text": "Audits de sécurité (applications, infrastructures), analyse des risques et accompagnement à la conformité (RGPD, OWASP, durcissement)." },
+          { "title": "Sécurisation des applications", "text": "Bonnes pratiques de développement sécurisé, gestion des secrets, authentification et autorisation, sécurisation des APIs." },
+          { "title": "Accompagnement continu", "text": "Formation des équipes, mise en place de processus de gestion des vulnérabilités et de réponse aux incidents." }
+        ]
+      }
+    }
+  },
+  "privacy": {
+    "title": "Politique de confidentialité",
+    "updated": "Dernière mise à jour : février 2026",
+    "intro": "Kadrix s'engage à protéger la vie privée des utilisateurs de son site. Cette politique décrit comment nous collectons, utilisons et protégeons vos données personnelles dans le respect du Règlement général sur la protection des données (RGPD) et de la loi française « Informatique et libertés ».",
+    "sections": {
+      "controller": { "title": "1. Responsable du traitement", "body": "Le responsable du traitement des données est Kadrix. Pour toute question relative à vos données personnelles : " },
+      "data": { "title": "2. Données collectées", "body": "Nous sommes susceptibles de collecter les données suivantes :", "items": ["Formulaire de contact : nom, prénom, adresse e-mail, numéro de téléphone, société, message et éventuellement budget. Ces données sont envoyées via Formspree et traitées pour répondre à votre demande.", "Navigation : données techniques (adresse IP, type de navigateur, pages visitées) dans la mesure nécessaire au fonctionnement du site et à la sécurité des systèmes."] },
+      "purposes": { "title": "3. Finalités et bases légales", "body": "Les données sont traitées pour : répondre à vos demandes de contact (base légale : exécution de mesures précontractuelles / intérêt légitime), assurer le bon fonctionnement et la sécurité du site (intérêt légitime), et respecter nos obligations légales." },
+      "retention": { "title": "4. Durée de conservation", "body": "Les données du formulaire de contact sont conservées le temps nécessaire au traitement de votre demande puis, sauf opposition de votre part, pendant une durée raisonnable pour les échanges commerciaux (par exemple 3 ans à compter du dernier contact). Les données de navigation (logs) sont conservées conformément aux obligations légales (généralement 12 mois maximum)." },
+      "recipients": { "title": "5. Destinataires et transferts", "body": "Les données du formulaire sont transmises à notre prestataire Formspree pour l'envoi des messages. Formspree peut traiter les données dans des pays reconnus par la Commission européenne comme offrant un niveau de protection adéquat, ou dans le cadre de garanties appropriées. Nous ne vendons pas vos données à des tiers." },
+      "rights": { "title": "6. Vos droits", "body": "Vous disposez d'un droit d'accès, de rectification, d'effacement, de limitation du traitement, de portabilité et d'opposition concernant vos données personnelles. Pour les exercer, contactez-nous à ", "cnil": "Vous avez également le droit d'introduire une réclamation auprès de la CNIL (" },
+      "cookies": { "title": "7. Cookies", "body": "Ce site n'utilise pas de cookies analytics ou publicitaires. Seuls des cookies strictement nécessaires au fonctionnement du site (le cas échéant) peuvent être utilisés. Si nous venions à utiliser des cookies pour d'autres finalités, nous mettrions à jour cette politique et solliciterions votre consentement si la loi l'exige." },
+      "changes": { "title": "8. Modifications", "body": "Kadrix se réserve le droit de modifier cette politique de confidentialité. La date de dernière mise à jour est indiquée en tête de page. Nous vous invitons à la consulter régulièrement." }
+    }
+  },
+  "legal": {
+    "title": "Mentions légales",
+    "updated": "Dernière mise à jour : février 2026",
+    "sections": {
+      "publisher": { "title": "1. Éditeur du site", "body": "Le site www.kadrix.fr est édité par :", "company": "Kadrix", "contact": "Contact : " },
+      "director": { "title": "2. Directeur de la publication", "body": "Le directeur de la publication est [Nom du responsable]." },
+      "hosting": { "title": "3. Hébergement", "body": "Le site est hébergé par :" },
+      "ip": { "title": "4. Propriété intellectuelle", "body": "L'ensemble du contenu de ce site (textes, images, graphismes, logo, structure, etc.) est protégé par le droit d'auteur et le droit des marques. Toute reproduction, représentation ou diffusion, totale ou partielle, sans autorisation préalable de Kadrix est interdite et constitue une contrefaçon sanctionnée par les articles L.335-2 et suivants du Code de propriété intellectuelle." },
+      "links": { "title": "5. Liens hypertextes", "body": "Le site peut contenir des liens vers d'autres sites. Kadrix n'exerce aucun contrôle sur ces sites et décline toute responsabilité quant à leur contenu. La création de liens vers www.kadrix.fr est soumise à l'accord préalable de Kadrix." },
+      "disclaimer": { "title": "6. Limitation de responsabilité", "body": "Kadrix s'efforce d'assurer l'exactitude et la mise à jour des informations diffusées sur ce site. Toutefois, Kadrix ne peut garantir l'exactitude, la précision ou l'exhaustivité des informations et décline toute responsabilité en cas d'erreur ou d'omission." }
+    }
+  },
+  "metadata": {
+    "title": "Kadrix - Agence d'intégration IA, cloud & développement web",
+    "description": "Intégration IA, infrastructures cloud et on-premise, développement web. Votre équipe tech pour accélérer vos projets."
+  }
+}

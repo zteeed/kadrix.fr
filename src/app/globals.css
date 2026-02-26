@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --kadrix-dark: #0f172a;
+  --kadrix-primary: #0ea5e9;
+  --kadrix-accent: #06b6d4;
+  --kadrix-muted: #64748b;
+  --kadrix-light: #f8fafc;
+}
+
+body {
+  @apply bg-white text-kadrix-dark antialiased;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}

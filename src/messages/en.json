@@ -1,0 +1,291 @@
+{
+  "common": {
+    "cta": "Let's discuss your project",
+    "nav": {
+      "home": "Home",
+      "expertises": "Expertise",
+      "references": "References",
+      "team": "Team",
+      "contact": "Contact"
+    },
+    "footer": {
+      "tagline": "AI integration agency, cloud and on-premise infrastructure, web development.",
+      "contact": "Contact",
+      "links": "Links",
+      "privacy": "Privacy policy",
+      "legal": "Legal notice",
+      "copyright": "All rights reserved."
+    },
+    "menu": "Menu",
+    "switchToEnglish": "Switch to English",
+    "switchToFrench": "Switch to French",
+    "langFrench": "Français",
+    "langEnglish": "English",
+    "learnMore": "Learn more →",
+    "backToHome": "Back to home",
+    "allExpertises": "← All our expertise",
+    "ourServices": "Our services"
+  },
+  "home": {
+    "hero": {
+      "title": "AI, cloud & web development integration agency",
+      "subtitle": "Your AI, cloud & web team",
+      "body": "We design and evolve your applications at competitive costs, without intermediaries, to accelerate your business."
+    },
+    "teamSection": {
+      "title": "The Kadrix team",
+      "body": "Passionate about tech challenges, we aim for excellence for each of our clients.",
+      "link": "Meet the team →"
+    },
+    "about": {
+      "title": "Passionate about tech challenges",
+      "p1": "We aim for excellence for all our clients. We work in the most pragmatic way, in full transparency with you and your teams throughout the development process.",
+      "p2": "We are used to working on projects with significant technical and business stakes. Whether for start-ups or large groups, we adapt our methods and are ready to take on every challenge."
+    },
+    "founders": {
+      "title": "The founders",
+      "linkedin": "LinkedIn profile of"
+    },
+    "foundersList": [
+      {
+        "name": "Aymeric du Réau",
+        "role": "CEO",
+        "description": "Aymeric leads Kadrix after years in consulting and tech."
+      },
+      {
+        "name": "Jean-Christophe KOURAJIAN",
+        "role": "CPO",
+        "description": "Jean-Christophe drives product vision. He has solid experience in tech and innovation."
+      },
+      {
+        "name": "Aurélien Duboc",
+        "role": "CTO",
+        "description": "Aurélien leads tech and infrastructure."
+      }
+    ],
+    "expertises": {
+      "title": "Our expertise",
+      "items": [
+        { "title": "Artificial intelligence", "href": "intelligence-artificielle" },
+        { "title": "Cloud / On-Premise infrastructure", "href": "infrastructure-cloud" },
+        { "title": "Availability & monitoring (SLA)", "href": "disponibilite-monitoring" },
+        { "title": "Automation", "href": "automatisation" },
+        { "title": "Web platforms", "href": "developpement-sur-mesure" },
+        { "title": "Cybersecurity", "href": "cybersecurite" }
+      ]
+    },
+    "ctaSection": {
+      "title": "Start the conversation",
+      "body": "Let's talk about your challenges: AI integration, cloud infrastructure and development."
+    }
+  },
+  "references": {
+    "title": "Our references",
+    "intro": "We support companies in AI, cloud infrastructure and web development.",
+    "sectors": ["all", "industry", "services", "finance", "retail", "tech"],
+    "sectorLabels": {
+      "all": "All",
+      "industry": "Industry",
+      "services": "Services",
+      "finance": "Finance",
+      "retail": "Retail",
+      "tech": "Tech"
+    },
+    "trust": "They trust us",
+    "trustBody": "Large groups and SMBs in industry, retail, finance and tech.",
+    "partnerDescriptions": {
+      "carrefour": "Integration & development",
+      "renault": "Infrastructure & platforms",
+      "groupama": "Insurance & services",
+      "murex": "Infrastructure & DevOps",
+      "cleyrop": "Custom development",
+      "safran": "Infrastructure & industry",
+      "thales": "Infrastructure & defence",
+      "ministere-armees": "Institutional partnership",
+      "quicksign": "Platform & automation",
+      "fdj": "Infrastructure & gaming",
+      "decathlon": "Infrastructure & retail",
+      "nexity": "Services & real estate",
+      "outscale": "Cloud infrastructure",
+      "ere-conseils": "Support & expertise"
+    }
+  },
+  "equipe": {
+    "title": "The Kadrix team",
+    "intro": "Passionate about tech challenges, we aim for excellence for each of our clients.",
+    "foundersTitle": "The founders",
+    "linkedin": "LinkedIn profile of",
+    "teamTitle": "The team",
+    "teamIntro": "Every Kadrix member has gone through a rigorous selection process that values technical potential, team spirit and commitment to client service.",
+    "teams": [
+      { "name": "Full-Stack Development", "count": "30+", "description": "Full-stack developers passionate about modern technologies." },
+      { "name": "AI Engineering", "count": "15+", "description": "AI and data engineers for your artificial intelligence projects." },
+      { "name": "Product & Design", "count": "20+", "description": "Product managers and UX/UI designers for user-centred products." },
+      { "name": "Operations & Sales", "count": "10+", "description": "Commercial support and project delivery." }
+    ],
+    "projectCta": "Have a project? Start the conversation →"
+  },
+  "contact": {
+    "title": "Let's discuss your project",
+    "intro": "Let's talk about your challenges: AI integration, cloud infrastructure and development.",
+    "firstName": "First name",
+    "lastName": "Last name",
+    "email": "Email",
+    "phone": "Phone",
+    "company": "Company (or project name)",
+    "budget": "Budget",
+    "budgetPlaceholder": "Choose your budget",
+    "budgetOptions": ["0€ - 10K€", "10K€ - 30K€", "30K€ - 60K€", "60K€ - 120K€", "120K€ - 300K€", "300K€+", "I don't know"],
+    "messageLabel": "Would you like to share any additional information about your project? (optional)",
+    "submit": "Send",
+    "subjectNewMessage": "New message from www.kadrix.fr"
+  },
+  "contactMerci": {
+    "title": "Message sent",
+    "body": "Thank you for your message. We will get back to you shortly."
+  },
+  "expertises": {
+    "pageTitle": "Our expertise",
+    "pageIntro": "AI, cloud infrastructure, automation, web and cybersecurity. We support your projects from A to Z.",
+    "technologiesTitle": "Technologies we use",
+    "techNames": {
+      "python": "Python",
+      "tensorflow": "TensorFlow",
+      "pytorch": "PyTorch",
+      "huggingface": "Hugging Face",
+      "openai": "OpenAI",
+      "langchain": "LangChain",
+      "pandas": "Pandas",
+      "aws": "AWS",
+      "gcp": "Google Cloud",
+      "azure": "Microsoft Azure",
+      "ovh": "OVH",
+      "scaleway": "Scaleway",
+      "outscale": "Outscale",
+      "fortinet": "Fortinet",
+      "cisco": "Cisco",
+      "proxmox": "Proxmox",
+      "prometheus": "Prometheus",
+      "grafana": "Grafana",
+      "datadog": "Datadog",
+      "elastic": "Elastic",
+      "pagerduty": "PagerDuty",
+      "kibana": "Kibana",
+      "terraform": "Terraform",
+      "ansible": "Ansible",
+      "gitlab": "GitLab",
+      "github": "GitHub",
+      "jenkins": "Jenkins",
+      "docker": "Docker",
+      "kubernetes": "Kubernetes",
+      "react": "React",
+      "nextjs": "Next.js",
+      "nodejs": "Node.js",
+      "typescript": "TypeScript",
+      "postgresql": "PostgreSQL",
+      "redis": "Redis",
+      "owasp": "OWASP",
+      "snyk": "Snyk",
+      "hashicorp-vault": "HashiCorp Vault",
+      "crowdstrike": "CrowdStrike"
+    },
+    "list": [
+      { "title": "Artificial intelligence", "slug": "intelligence-artificielle", "description": "Custom AI solutions, LLM, Computer Vision, predictive systems." },
+      { "title": "Cloud / On-Premise infrastructure", "slug": "infrastructure-cloud", "description": "Design, deployment and operation of cloud or on-premise infrastructure." },
+      { "title": "Availability & monitoring (SLA)", "slug": "disponibilite-monitoring", "description": "100% SLA, supervision, monitoring and high availability of your systems." },
+      { "title": "Automation", "slug": "automatisation", "description": "Deployment automation, CI/CD pipelines and business processes." },
+      { "title": "Web platforms", "slug": "developpement-sur-mesure", "description": "Web platforms and custom applications tailored to your processes." },
+      { "title": "Cybersecurity", "slug": "cybersecurite", "description": "Audit, security and best practices." }
+    ],
+    "slug": {
+      "intelligence-artificielle": {
+        "title": "Data & AI practice",
+        "subtitle": "We develop custom AI solutions in record time",
+        "description": "Our AI engineers support you in designing, developing and deploying high-impact AI models and applications.",
+        "services": [
+          { "title": "Data & AI audit", "text": "We analyse your processes and identify concrete opportunities to integrate AI into your business." },
+          { "title": "AI applications", "text": "Design and development of custom solutions that integrate with your stack and meet your objectives." },
+          { "title": "AI models", "text": "Development of custom models (ML, Deep Learning, finetuning) for your use cases." }
+        ]
+      },
+      "infrastructure-cloud": {
+        "title": "Cloud / On-Premise infrastructure",
+        "subtitle": "Design, deployment and operation of your infrastructure",
+        "description": "We design and operate cloud (AWS, GCP, Azure, OVH, Outscale…) or on-premise infrastructure tailored to your performance, cost and compliance constraints.",
+        "services": [
+          { "title": "Public & hybrid cloud", "text": "Architecture, migration and operation of cloud or hybrid infrastructure." },
+          { "title": "On-Premise", "text": "Deployment and operation of servers and environments in your premises or datacenters." }
+        ]
+      },
+      "disponibilite-monitoring": {
+        "title": "Availability & monitoring (SLA)",
+        "subtitle": "100% SLA, supervision and high availability",
+        "description": "Implementation of monitoring, alerting and supervision to ensure the availability of your systems and compliance with your SLA commitments.",
+        "services": [
+          { "title": "Monitoring & supervision", "text": "24/7 supervision, metrics, alerting and dashboards to manage your infrastructure and applications." },
+          { "title": "High availability", "text": "Resilient architectures and recovery plans to limit downtime." }
+        ]
+      },
+      "automatisation": {
+        "title": "Automation",
+        "subtitle": "CI/CD, pipelines and process automation",
+        "description": "We implement deployment pipelines (CI/CD), infrastructure as code and automation to accelerate and secure your deliveries.",
+        "services": [
+          { "title": "CI/CD", "text": "Automated build, test and deployment pipelines (GitLab CI, GitHub Actions, Jenkins, etc.)." },
+          { "title": "Infrastructure as Code", "text": "Terraform, Ansible and scripts to provision and maintain your environments in a reproducible way." }
+        ]
+      },
+      "developpement-sur-mesure": {
+        "title": "Web platforms & custom development",
+        "subtitle": "Performant and scalable web applications",
+        "description": "We design and develop custom web platforms, business software and SaaS applications tailored to your processes and growth.",
+        "services": [
+          { "title": "Web platforms", "text": "Showcase sites, portals, dashboards and modern web applications (React, Next.js, Node.js, etc.)." },
+          { "title": "Business software", "text": "Custom business tools to automate and optimise your internal processes." },
+          { "title": "SaaS applications", "text": "Scalable, multi-tenant and secure SaaS solutions." }
+        ]
+      },
+      "cybersecurite": {
+        "title": "Cybersecurity",
+        "subtitle": "Audit, security and best practices",
+        "description": "Security audits, implementation of best practices (OWASP, GDPR) and support to secure your applications and data.",
+        "services": [
+          { "title": "Audit & compliance", "text": "Security audits (applications, infrastructure), risk analysis and compliance support (GDPR, OWASP, hardening)." },
+          { "title": "Application security", "text": "Secure development best practices, secrets management, authentication and authorisation, API security." },
+          { "title": "Ongoing support", "text": "Team training, vulnerability management and incident response processes." }
+        ]
+      }
+    }
+  },
+  "privacy": {
+    "title": "Privacy policy",
+    "updated": "Last updated: February 2026",
+    "intro": "Kadrix is committed to protecting the privacy of users of its website. This policy describes how we collect, use and protect your personal data in compliance with the General Data Protection Regulation (GDPR) and applicable law.",
+    "sections": {
+      "controller": { "title": "1. Data controller", "body": "The data controller is Kadrix. For any question regarding your personal data: " },
+      "data": { "title": "2. Data collected", "body": "We may collect the following data:", "items": ["Contact form: name, first name, email address, phone number, company, message and optionally budget. This data is sent via Formspree and processed to respond to your request.", "Browsing: technical data (IP address, browser type, pages visited) as necessary for the operation of the site and system security."] },
+      "purposes": { "title": "3. Purposes and legal basis", "body": "Data is processed to: respond to your contact requests (legal basis: pre-contractual measures / legitimate interest), ensure the proper functioning and security of the site (legitimate interest), and comply with our legal obligations." },
+      "retention": { "title": "4. Retention period", "body": "Contact form data is retained for as long as necessary to process your request and then, unless you object, for a reasonable period for business exchanges (e.g. 3 years from last contact). Browsing data (logs) is retained in accordance with legal obligations (generally 12 months maximum)." },
+      "recipients": { "title": "5. Recipients and transfers", "body": "Form data is transmitted to our provider Formspree for sending messages. Formspree may process data in countries recognised by the European Commission as offering an adequate level of protection, or under appropriate safeguards. We do not sell your data to third parties." },
+      "rights": { "title": "6. Your rights", "body": "You have the right to access, rectify, erase, restrict processing, portability and to object regarding your personal data. To exercise these rights, contact us at ", "cnil": "You also have the right to lodge a complaint with the supervisory authority (" },
+      "cookies": { "title": "7. Cookies", "body": "This site does not use analytics or advertising cookies. Only cookies strictly necessary for the operation of the site (if any) may be used. If we were to use cookies for other purposes, we would update this policy and seek your consent where required by law." },
+      "changes": { "title": "8. Changes", "body": "Kadrix reserves the right to modify this privacy policy. The last update date is shown at the top of the page. We invite you to check it regularly." }
+    }
+  },
+  "legal": {
+    "title": "Legal notice",
+    "updated": "Last updated: February 2026",
+    "sections": {
+      "publisher": { "title": "1. Site publisher", "body": "The site www.kadrix.fr is published by:", "company": "Kadrix", "contact": "Contact: " },
+      "director": { "title": "2. Publication director", "body": "The publication director is [Name of responsible person]." },
+      "hosting": { "title": "3. Hosting", "body": "The site is hosted by:" },
+      "ip": { "title": "4. Intellectual property", "body": "All content on this site (text, images, graphics, logo, structure, etc.) is protected by copyright and trademark law. Any reproduction, representation or distribution, in whole or in part, without prior authorisation from Kadrix is prohibited and constitutes infringement under the French Intellectual Property Code." },
+      "links": { "title": "5. Hyperlinks", "body": "The site may contain links to other sites. Kadrix has no control over these sites and accepts no responsibility for their content. Creating links to www.kadrix.fr is subject to prior agreement from Kadrix." },
+      "disclaimer": { "title": "6. Limitation of liability", "body": "Kadrix endeavours to ensure the accuracy and timeliness of the information on this site. However, Kadrix cannot guarantee the accuracy, precision or completeness of the information and accepts no liability for any errors or omissions." }
+    }
+  },
+  "metadata": {
+    "title": "Kadrix - AI, cloud & web development integration agency",
+    "description": "AI integration, cloud and on-premise infrastructure, web development. Your tech team to accelerate your projects."
+  }
+}
