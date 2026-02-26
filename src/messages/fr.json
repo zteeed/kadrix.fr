@@ -276,9 +276,9 @@
     "title": "Mentions légales",
     "updated": "Dernière mise à jour : février 2026",
     "sections": {
-      "publisher": { "title": "1. Éditeur du site", "body": "Le site www.kadrix.fr est édité par :", "company": "Kadrix", "contact": "Contact : " },
+      "publisher": { "title": "1. Éditeur du site", "body": "Le site www.kadrix.fr est édité par :", "company": "Kadrix", "legalForm": "[Forme juridique : SAS, SARL, etc.]", "address": "[Siège social : adresse complète]", "postalCode": "[Code postal et ville]", "rcSiret": "[RCS / SIRET / capital social si applicable]", "contact": "Contact : " },
       "director": { "title": "2. Directeur de la publication", "body": "Le directeur de la publication est [Nom du responsable]." },
-      "hosting": { "title": "3. Hébergement", "body": "Le site est hébergé par :" },
+      "hosting": { "title": "3. Hébergement", "body": "Le site est hébergé par :", "hostName": "GitHub, Inc. (GitHub Pages)", "hostAddress": "88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, États-Unis" },
       "ip": { "title": "4. Propriété intellectuelle", "body": "L'ensemble du contenu de ce site (textes, images, graphismes, logo, structure, etc.) est protégé par le droit d'auteur et le droit des marques. Toute reproduction, représentation ou diffusion, totale ou partielle, sans autorisation préalable de Kadrix est interdite et constitue une contrefaçon sanctionnée par les articles L.335-2 et suivants du Code de propriété intellectuelle." },
       "links": { "title": "5. Liens hypertextes", "body": "Le site peut contenir des liens vers d'autres sites. Kadrix n'exerce aucun contrôle sur ces sites et décline toute responsabilité quant à leur contenu. La création de liens vers www.kadrix.fr est soumise à l'accord préalable de Kadrix." },
       "disclaimer": { "title": "6. Limitation de responsabilité", "body": "Kadrix s'efforce d'assurer l'exactitude et la mise à jour des informations diffusées sur ce site. Toutefois, Kadrix ne peut garantir l'exactitude, la précision ou l'exhaustivité des informations et décline toute responsabilité en cas d'erreur ou d'omission." }

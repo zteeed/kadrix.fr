@@ -276,9 +276,9 @@
     "title": "Legal notice",
     "updated": "Last updated: February 2026",
     "sections": {
-      "publisher": { "title": "1. Site publisher", "body": "The site www.kadrix.fr is published by:", "company": "Kadrix", "contact": "Contact: " },
+      "publisher": { "title": "1. Site publisher", "body": "The site www.kadrix.fr is published by:", "company": "Kadrix", "legalForm": "[Legal form: SAS, SARL, etc.]", "address": "[Registered office: full address]", "postalCode": "[Postal code and city]", "rcSiret": "[RCS / SIRET / share capital if applicable]", "contact": "Contact: " },
       "director": { "title": "2. Publication director", "body": "The publication director is [Name of responsible person]." },
-      "hosting": { "title": "3. Hosting", "body": "The site is hosted by:" },
+      "hosting": { "title": "3. Hosting", "body": "The site is hosted by:", "hostName": "GitHub, Inc. (GitHub Pages)", "hostAddress": "88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, United States" },
       "ip": { "title": "4. Intellectual property", "body": "All content on this site (text, images, graphics, logo, structure, etc.) is protected by copyright and trademark law. Any reproduction, representation or distribution, in whole or in part, without prior authorisation from Kadrix is prohibited and constitutes infringement under the French Intellectual Property Code." },
       "links": { "title": "5. Hyperlinks", "body": "The site may contain links to other sites. Kadrix has no control over these sites and accepts no responsibility for their content. Creating links to www.kadrix.fr is subject to prior agreement from Kadrix." },
       "disclaimer": { "title": "6. Limitation of liability", "body": "Kadrix endeavours to ensure the accuracy and timeliness of the information on this site. However, Kadrix cannot guarantee the accuracy, precision or completeness of the information and accepts no liability for any errors or omissions." }

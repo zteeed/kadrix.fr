@@ -17,7 +17,18 @@ export default async function MentionsLegalesPage({ params }: Props) {
   const t = getTranslations(locale);
   const s = t.legal.sections as Record<
     string,
-    { title: string; body: string; company?: string; contact?: string }
+    {
+      title: string;
+      body: string;
+      company?: string;
+      contact?: string;
+      legalForm?: string;
+      address?: string;
+      postalCode?: string;
+      rcSiret?: string;
+      hostName?: string;
+      hostAddress?: string;
+    }
   >;
 
   return (
@@ -34,13 +45,13 @@ export default async function MentionsLegalesPage({ params }: Props) {
           <p className="mt-2">
             <strong>{s.publisher.company}</strong>
             <br />
-            [Forme juridique : SAS, SARL, etc.]
+            {s.publisher.legalForm}
             <br />
-            [Siège social : adresse complète]
+            {s.publisher.address}
             <br />
-            [Code postal et ville]
+            {s.publisher.postalCode}
           </p>
-          <p className="mt-2">[RCS / SIRET / capital social si applicable]</p>
+          <p className="mt-2">{s.publisher.rcSiret}</p>
           <p className="mt-2">
             {s.publisher.contact}
             <a href="mailto:contact@kadrix.fr" className="text-kadrix-primary hover:underline">
@@ -63,9 +74,9 @@ export default async function MentionsLegalesPage({ params }: Props) {
           <p className="mt-2">
             {s.hosting.body}
             <br />
-            [Nom de l&apos;hébergeur]
+            {s.hosting.hostName}
             <br />
-            [Adresse de l&apos;hébergeur]
+            {s.hosting.hostAddress}
           </p>
         </section>
 

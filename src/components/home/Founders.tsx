@@ -10,7 +10,7 @@ function FounderCard({
   founder,
   linkedinLabel,
 }: {
-  founder: { name: string; role: string; slug: string; initials: string; description: string; linkedinUrl: string };
+  founder: { name: string; role: string; slug: string; imageFile: string; initials: string; description: string; linkedinUrl: string };
   linkedinLabel: string;
 }) {
   const [imgError, setImgError] = useState(false);
@@ -19,7 +19,7 @@ function FounderCard({
       <div className="relative mx-auto flex h-32 w-32 items-center justify-center overflow-hidden rounded-full bg-slate-200 text-3xl font-semibold text-kadrix-muted">
         {!imgError ? (
           <Image
-            src={`/team/${founder.slug}.jpg`}
+            src={`/team/${founder.imageFile}`}
             alt={founder.name}
             width={128}
             height={128}
@@ -49,6 +49,7 @@ function FounderCard({
 }
 
 const slugs = ["aymeric-du-reau", "jean-christophe-kourajian", "aurelien-duboc"];
+const imageFiles = ["aymeric-du-reau.jpg", "jean-christophe-kourajian-2.jpg", "aurelien-duboc.jpg"];
 const linkedinUrls = [
   "https://www.linkedin.com/in/aymeric-du-reau/",
   "https://www.linkedin.com/in/jckourajian/",
@@ -60,6 +61,7 @@ export function Founders({ t, locale }: { t: Messages; locale: Locale }) {
     (f, i) => ({
       ...f,
       slug: slugs[i],
+      imageFile: imageFiles[i],
       initials: f.name.split(" ").map((n) => n[0]).join("").slice(0, 3),
       linkedinUrl: linkedinUrls[i],
     })
